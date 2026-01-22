@@ -16,7 +16,18 @@ function updateWords() {
 
     let word5 = pickRandomPhone(0, "consonant") + pickRandomPhone(vLevel, "vowel") + pickRandomPhone(0, "consonant") + pickRandomPhone(0, "vowel");
 
-    outputEl.innerHTML = word1 + "<br>" + word2 + "<br>" + word3 + "<br>" + word4 + "<br>" + word5
+    let word6 = pickRandomPhone(cLevel, "consonant") + pickRandomPhone(0, "vowel") + pickRandomPhone(0, "consonant");
+    
+    let word7 = pickRandomPhone(0, "consonant") + pickRandomPhone(vLevel, "vowel") + pickRandomPhone(0, "consonant");
+
+    let word8 = pickRandomPhone(0, "consonant") + pickRandomPhone(0, "vowel") + pickRandomPhone(cLevel, "consonant") + pickRandomPhone(0, "vowel");
+
+    let word9 = pickRandomPhone(0, "consonant") + pickRandomPhone(0, "vowel") + pickRandomPhone(cLevel, "consonant") + pickRandomPhone(0, "vowel");
+
+    let word10 = pickRandomPhone(0, "consonant") + pickRandomPhone(vLevel, "vowel") + pickRandomPhone(0, "consonant") + pickRandomPhone(0, "vowel");
+
+
+    outputEl.innerHTML = word1 + "<br>" + word2 + "<br>" + word3 + "<br>" + word4 + "<br>" + word5 + "<br>" + word6 + "<br>" + word7 + "<br>" + word8 + "<br>" + word9 + "<br>" + word10
 }
 
 function pickRandomPhone(level, type) {
