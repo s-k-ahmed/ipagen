@@ -6,7 +6,7 @@ function updateWords() {
     let cLevel = parseInt(document.getElementById('csel').value);
     let vLevel = parseInt(document.getElementById('vsel').value);
 
-    if (cLevel > 6 || vLevel > 2) {
+    if (cLevel > 6 || vLevel > 2 || cLevel < 0 || vLevel < 0) {
         outputEl.innerHTML = "Please choose valid level numbers."
         return;
     }
