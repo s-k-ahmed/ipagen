@@ -6,6 +6,11 @@ function updateWords() {
     let cLevel = parseInt(document.getElementById('csel').value);
     let vLevel = parseInt(document.getElementById('vsel').value);
 
+    if (cLevel > 6 || vLevel > 2) {
+        outputEl.innerHTML = "Please choose valid level numbers."
+        return;
+    }
+
     let word1 = pickRandomPhone(cLevel, "consonant") + pickRandomPhone(0, "vowel") + pickRandomPhone(0, "consonant");
     
     let word2 = pickRandomPhone(0, "consonant") + pickRandomPhone(vLevel, "vowel") + pickRandomPhone(0, "consonant");
